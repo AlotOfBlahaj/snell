@@ -64,11 +64,7 @@ else
       "listen_port": $PORT,
       "sniff": true,
       "method": "2022-blake3-aes-128-gcm",
-      "password": "$PASSWORD",
-      "multiplex": {
-        "enabled": true,
-        "padding": true
-      }
+      "password": "$PASSWORD"
     }
   ],
   "outbounds": [
@@ -122,12 +118,7 @@ else
   "server_port": $PORT,
   "method": "2022-blake3-aes-128-gcm",
   "password": "$PASSWORD",
-  "udp_over_tcp": false,
-  "multiplex": {
-    "enabled": true,
-    "protocol": "h2mux",
-    "padding": true
-  }
+  "udp_over_tcp": false
 }
 EOF
   )
